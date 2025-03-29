@@ -1,0 +1,18 @@
+test_cases:
+  common_ports:
+    - 21    # FTP
+    - 22    # SSH
+    - 80    # HTTP
+    - 443   # HTTPS
+    - 3389  # RDP
+  
+  vulnerability_checks:
+    - name: "ICMP Ping Test"
+      protocol: "ICMP"
+      port: null
+      description: "Check if ICMP ping is allowed"
+    
+    - name: "Telnet Test"
+      protocol: "TCP"
+      port: 23
+      description: "Check if insecure Telnet is allowed"
