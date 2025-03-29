@@ -1,0 +1,14 @@
+{
+  "known_vulnerable_rules": [
+    {
+      "rule": "ALLOW ALL FROM ANY",
+      "risk": "CRITICAL",
+      "description": "Allows all traffic from any source"
+    },
+    {
+      "rule": "ALLOW TCP 135-139 FROM ANY",
+      "risk": "HIGH",
+      "description": "Allows NetBIOS ports from any source"
+    }
+  ]
+}
